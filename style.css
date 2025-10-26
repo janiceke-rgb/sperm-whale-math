@@ -59,7 +59,7 @@ h2 {
     display: none; /* 預設隱藏 */
 }
 
-[cite_start]/* 表格 [cite: 11] */
+/* 表格 */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -72,7 +72,7 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-[cite_start]/* 表格中的基準量 [cite: 11] */
+/* 表格中的基準量 */
 tbody tr:first-child {
     background-color: #e0f2f1;
 }
