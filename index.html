@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物體重大PK！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+
+        <div id="welcome-screen" class="screen active">
+            <h1>動物體重大PK！</h1>
+            <p>歡迎來到 6-1 基準量與比較量挑戰</p>
+            <div class="learning-tip">
+                <p><strong>學習小叮嚀：</strong></p>
+                <p>1. [cite_start]當作「1」的量，稱為 <strong>基準量</strong> [cite: 5]</p>
+                <p>2. [cite_start]被比較的量，稱為 <strong>比較量</strong> [cite: 5]</p>
+                <p>3. [cite_start]公式：<strong>比較量 ÷ 基準量 = 幾倍</strong> [cite: 6]</p>
+            </div>
+            <button id="start-btn">開始遊戲</button>
+        </div>
+
+        <div id="intro-screen" class="screen">
+            <h2>介紹參賽者！</h2>
+            <p>在這次比賽中，我們要以「非洲象」當作 <strong>基準量 (當作 1)</strong>。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>動物</th>
+                        <th>體重 (公噸)</th>
+                        <th>角色</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>非洲象</td>
+                        <td>6</td>
+                        <td><strong>基準量 (1)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>抹香鯨</td>
+                        <td>30</td>
+                        <td>比較量</td>
+                    </tr>
+                    <tr>
+                        <td>鯨鯊</td>
+                        <td>18</td>
+                        <td>比較量</td>
+                    </tr>
+                    <tr>
+                        <td>犀牛</td>
+                        <td>3</td>
+                        <td>比較量</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="start-challenge-btn">我懂了，開始挑戰！</button>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <h2 id="question-text"></h2>
+            
+            <div id="question-hint" class="hint-box"></div>
+
+            <div class="answer-area">
+                <label for="answer-input">答案：</label>
+                <input type="text" id="answer-input" size="5">
+                <span>倍</span>
+            </div>
+
+            <div class="button-group">
+                <button id="submit-btn">送出答案</button>
+                <button id="hint-btn">我需要提示</button>
+            </div>
+            
+            <p id="feedback-text"></p>
+        </div>
+
+        <div id="finish-screen" class="screen">
+            <h2>恭喜你！全部答對了！</h2>
+            <p>你已經學會了：</p>
+            <ul>
+                <li>非洲象是「基準量」</li>
+                <li>抹香鯨、鯨鯊、犀牛是「比較量」</li>
+                <li>用「比較量 ÷ 基準量」算出倍數！</li>
+            </ul>
+            <button id="restart-btn">再玩一次</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
