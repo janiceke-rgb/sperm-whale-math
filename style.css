@@ -1,0 +1,134 @@
+/* 基本樣式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft JhengHei", "Helvetica Neue", sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* 遊戲容器 */
+#game-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 25px 30px;
+    text-align: center;
+}
+
+/* 畫面切換的基本設定 */
+.screen {
+    display: none; /* 預設所有畫面都隱藏 */
+}
+.screen.active {
+    display: block; /* 只有 .active 的畫面會顯示 */
+}
+
+/* 標題 */
+h1 {
+    color: #00796b;
+}
+h2 {
+    color: #333;
+}
+
+/* 學習小叮嚀的框框 */
+.learning-tip {
+    background-color: #e0f2f1;
+    border-left: 5px solid #00796b;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 5px;
+}
+.learning-tip p {
+    margin: 5px 0;
+}
+
+/* 提示訊息的框框 */
+.hint-box {
+    background-color: #fffbeb;
+    border: 1px dashed #f9a825;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: none; /* 預設隱藏 */
+}
+
+[cite_start]/* 表格 [cite: 11] */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+th {
+    background-color: #f2f2f2;
+}
+[cite_start]/* 表格中的基準量 [cite: 11] */
+tbody tr:first-child {
+    background-color: #e0f2f1;
+}
+
+/* 按鈕 */
+button {
+    background-color: #00897b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+button:hover {
+    background-color: #00695c;
+}
+/* 提示按鈕用不同顏色 */
+#hint-btn {
+    background-color: #f9a825;
+}
+#hint-btn:hover {
+    background-color: #f57f17;
+}
+
+/* 作答區域 */
+.answer-area {
+    margin: 25px 0;
+    font-size: 18px;
+}
+#answer-input {
+    font-size: 18px;
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+#answer-input:focus {
+    outline: none;
+    border-color: #00796b;
+}
+
+/* 回饋訊息 */
+#feedback-text {
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 20px; /* 佔個位置，避免跳動 */
+}
+/* 答對的樣式 */
+.correct {
+    color: green;
+}
+/* 答錯的樣式 */
+.incorrect {
+    color: red;
+}
